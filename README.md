@@ -2,8 +2,6 @@
 
 Practical checklists, playbooks and tools for modern infrastructure.
 
-> **Brand transition:** Phoenix Platform is becoming **Serdhub**. This repository keeps its current name and URL during the transition.
-
 Built by **Serdhub** — Modern infrastructure. Real failures. Practical tools.
 
 ## Available now
