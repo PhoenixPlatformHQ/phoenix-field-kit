@@ -1,8 +1,10 @@
-# Phoenix Field Kit
+# Field Kit
 
 Practical checklists, playbooks and tools for modern infrastructure.
 
-Built by Phoenix Platform — Modern infrastructure. Real failures. Practical tools.
+> **Brand transition:** Phoenix Platform is becoming **Serdhub**. This repository keeps its current name and URL during the transition.
+
+Built by **Serdhub** — Modern infrastructure. Real failures. Practical tools.
 
 ## Available now
 
