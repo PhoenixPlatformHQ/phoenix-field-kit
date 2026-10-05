@@ -1,6 +1,6 @@
 # VIDEO_012 — approved by Fabio
 
-Status: Editorially approved on 5 October 2026. Scheduling blocked pending verification of actual plan and residual quota.
+Status: Editorially approved on 5 October 2026. Scheduled in Metricool: TikTok 5 October 2026 20:45 Europe/Rome (388815192); YouTube 20:47 (388815414). Both PENDING, publication not yet confirmed. Free quota verified from authenticated UI. Publication check 5 October 22:21; results check 7 October 22:21.
 
 ## YouTube title
 
