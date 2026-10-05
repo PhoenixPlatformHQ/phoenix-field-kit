@@ -1,0 +1,23 @@
+{
+  "asset_id": "PHX_20261005_NUMERIC_SKIP_VIDEO012",
+  "sha256": "f8a0da99a40b024dc458d36e450568622bd2888499b091e70a8d545679c6ef70",
+  "approval": {
+    "source": "User message: Approvato",
+    "date": "2026-10-05",
+    "scope": "VIDEO_012 and supplied TikTok/YouTube texts"
+  },
+  "status": "APPROVED_BLOCKED_QUOTA_VERIFICATION",
+  "brand_id": 6837624,
+  "timezone": "Europe/Rome",
+  "quota": {
+    "verified": false,
+    "remaining": null,
+    "reason": "Metricool connector exposes no plan or monthly usage fields. Queue/history not accepted as quota proof."
+  },
+  "post_ids": [],
+  "candidate_slots": {
+    "tiktok": "2026-10-05T18:00:00+02:00",
+    "youtube": "2026-10-05T18:00:00+02:00"
+  },
+  "candidate_slots_reserved": false
+}
