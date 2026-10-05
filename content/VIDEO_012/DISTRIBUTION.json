@@ -6,18 +6,47 @@
     "date": "2026-10-05",
     "scope": "VIDEO_012 and supplied TikTok/YouTube texts"
   },
-  "status": "APPROVED_BLOCKED_QUOTA_VERIFICATION",
+  "status": "SCHEDULED_PENDING_PUBLICATION",
   "brand_id": 6837624,
   "timezone": "Europe/Rome",
   "quota": {
-    "verified": false,
-    "remaining": null,
-    "reason": "Metricool connector exposes no plan or monthly usage fields. Queue/history not accepted as quota proof."
+    "verified": true,
+    "source": "Metricool authenticated UI: Piani e fatturazione confirms Free 20/month; loaded planner shows 2/20 published",
+    "checked_local": "2026-10-05T20:19:00+02:00",
+    "limit": 20,
+    "published_at_check": 2,
+    "reserved_by_this_action": 2,
+    "conservative_remaining": 16
   },
-  "post_ids": [],
+  "post_ids": [
+    {
+      "network": "tiktok",
+      "id": 388815192,
+      "uuid": "-3346010690374252717",
+      "status": "PENDING",
+      "publicationDate": {
+        "dateTime": "2026-10-05T20:45:00",
+        "timezone": "Europe/Rome"
+      },
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=6837624&openWithPostUuid=-3346010690374252717"
+    },
+    {
+      "network": "youtube",
+      "id": 388815414,
+      "uuid": "8823369223841138835",
+      "status": "PENDING",
+      "publicationDate": {
+        "dateTime": "2026-10-05T20:47:00",
+        "timezone": "Europe/Rome"
+      },
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=6837624&openWithPostUuid=8823369223841138835"
+    }
+  ],
   "candidate_slots": {
-    "tiktok": "2026-10-05T18:00:00+02:00",
-    "youtube": "2026-10-05T18:00:00+02:00"
+    "tiktok": "2026-10-05T20:45:00+02:00",
+    "youtube": "2026-10-05T20:47:00+02:00"
   },
-  "candidate_slots_reserved": false
+  "candidate_slots_reserved": true,
+  "media_url": "https://static.metricool.com/planner/202610/6837624-file-2768150590672639082.mp4",
+  "metricool_media_sha256_verified": "f8a0da99a40b024dc458d36e450568622bd2888499b091e70a8d545679c6ef70"
 }
