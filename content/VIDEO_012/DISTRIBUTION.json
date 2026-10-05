@@ -6,7 +6,7 @@
     "date": "2026-10-05",
     "scope": "VIDEO_012 and supplied TikTok/YouTube texts"
   },
-  "status": "SCHEDULED_PENDING_PUBLICATION",
+  "status": "PUBLISHED",
   "brand_id": 6837624,
   "timezone": "Europe/Rome",
   "quota": {
@@ -23,23 +23,25 @@
       "network": "tiktok",
       "id": 388815192,
       "uuid": "-3346010690374252717",
-      "status": "PENDING",
+      "status": "PUBLISHED",
+      "network_id": "7693256872903838978",
+      "url": "https://www.tiktok.com/@phoenixplatformhq/video/7693256872903838978",
       "publicationDate": {
         "dateTime": "2026-10-05T20:45:00",
         "timezone": "Europe/Rome"
-      },
-      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=6837624&openWithPostUuid=-3346010690374252717"
+      }
     },
     {
       "network": "youtube",
       "id": 388815414,
       "uuid": "8823369223841138835",
-      "status": "PENDING",
+      "status": "PUBLISHED",
+      "network_id": "plgMv0DqQhE",
+      "url": "https://www.youtube.com/shorts/plgMv0DqQhE",
       "publicationDate": {
         "dateTime": "2026-10-05T20:47:00",
         "timezone": "Europe/Rome"
-      },
-      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=6837624&openWithPostUuid=8823369223841138835"
+      }
     }
   ],
   "candidate_slots": {
@@ -48,5 +50,9 @@
   },
   "candidate_slots_reserved": true,
   "media_url": "https://static.metricool.com/planner/202610/6837624-file-2768150590672639082.mp4",
-  "metricool_media_sha256_verified": "f8a0da99a40b024dc458d36e450568622bd2888499b091e70a8d545679c6ef70"
+  "metricool_media_sha256_verified": "f8a0da99a40b024dc458d36e450568622bd2888499b091e70a8d545679c6ef70",
+  "publication_confirmation": {
+    "source": "User confirmation and Metricool PUBLISHED status with platform URLs",
+    "date": "2026-10-05"
+  }
 }
