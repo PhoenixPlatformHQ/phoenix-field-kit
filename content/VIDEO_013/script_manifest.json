@@ -1,0 +1,19 @@
+{
+  "blocks": [
+    {
+      "vo_line": "Your Jenkins pipeline passed. Did it package the build it started?"
+    },
+    {
+      "vo_line": "Build B number five finishes. Six and seven complete before packaging starts."
+    },
+    {
+      "vo_line": "The default selector can copy the latest stable build, not the one this pipeline triggered."
+    },
+    {
+      "vo_line": "Capture build number. Use selector specific, keep optional false, and propagate failures."
+    },
+    {
+      "vo_line": "Then verify the digest. This is a code walkthrough, not a Jenkins run. The free lab is ready for review."
+    }
+  ]
+}

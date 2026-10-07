@@ -1,0 +1,30 @@
+pipeline {
+  agent any
+  parameters {
+    string(name: 'A_JOB')
+    string(name: 'A_BUILD')
+    string(name: 'B_JOB')
+    string(name: 'B_BUILD')
+  }
+  stages {
+    stage('Copy exact archived builds') {
+      steps {
+        copyArtifacts projectName: params.A_JOB,
+          selector: specific(params.A_BUILD), filter: 'artifact/**',
+          target: 'inputs/a', optional: false, fingerprintArtifacts: true
+        copyArtifacts projectName: params.B_JOB,
+          selector: specific(params.B_BUILD), filter: 'artifact/**',
+          target: 'inputs/b', optional: false, fingerprintArtifacts: true
+      }
+    }
+    stage('Verify bytes') {
+      steps {
+        sh '''
+          set -eu
+          (cd inputs/a && sha256sum -c artifact/SHA256SUMS)
+          (cd inputs/b && sha256sum -c artifact/SHA256SUMS)
+        '''
+      }
+    }
+  }
+}
