@@ -1,0 +1,38 @@
+{
+  "asset": "VIDEO_014",
+  "sha256": "0095b9e3a1630683c7a95910243b5673ecc11e6ae873aa5410a63b32e59dd8b5",
+  "approval": "Fabio explicitly requested generate locally and publish via Metricool, 2026-10-09",
+  "status": "SCHEDULED_PENDING",
+  "cost_eur": 0,
+  "quota": "Manual quota not exposed; existing Free account accepted both posts through connected tool. No upgrade or payment action.",
+  "lab_url": "https://github.com/PhoenixPlatformHQ/phoenix-field-kit/tree/content/video-014-gitlab-deploy-race/labs/gitlab-deploy-race",
+  "posts": [
+    {
+      "id": 391800335,
+      "uuid": "-7779022626985457265",
+      "network": "tiktok",
+      "date": {
+        "dateTime": "2026-10-09T10:00:00",
+        "timezone": "Europe/Rome"
+      },
+      "media": [
+        "https://static.metricool.com/planner/202610/6837624-file-17017249798628656420.mp4"
+      ],
+      "status": "PENDING"
+    },
+    {
+      "id": 391800494,
+      "uuid": "-6569891959556192968",
+      "network": "youtube",
+      "date": {
+        "dateTime": "2026-10-09T16:00:00",
+        "timezone": "Europe/Rome"
+      },
+      "media": [
+        "https://static.metricool.com/planner/202610/6837624-file-17515569578350185540.mp4"
+      ],
+      "status": "PENDING"
+    }
+  ],
+  "media_verified": "SHA256 match for both hosted media copies"
+}
