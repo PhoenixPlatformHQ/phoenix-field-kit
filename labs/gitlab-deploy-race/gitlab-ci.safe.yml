@@ -1,0 +1,15 @@
+stages:
+  - deploy
+
+deploy_production:
+  stage: deploy
+  environment:
+    name: production
+  resource_group: production
+  script:
+    - ./deploy.sh "$CI_COMMIT_SHA"
+
+# Configure the resource group's process_mode through the GitLab API.
+# For continuous delivery, evaluate newest_ready_first and keep deploy.sh idempotent.
+# Separately enable "Prevent outdated deployment jobs" in project CI/CD settings.
+
