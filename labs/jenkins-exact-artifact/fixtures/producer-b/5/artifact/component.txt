@@ -1,0 +1,4 @@
+job=producer-b
+build=5
+commit=abc123
+payload=v1

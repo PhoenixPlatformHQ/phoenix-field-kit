@@ -1,0 +1,3 @@
+2026-10-03T10:00:00Z deployment demo rolled out
+2026-10-03T10:02:00Z readiness probe failed: connection refused
+Example synthetic secret for redaction test only: token=NOT_A_REAL_SECRET

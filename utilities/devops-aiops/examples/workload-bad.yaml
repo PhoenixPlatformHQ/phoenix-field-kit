@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: demo
+spec:
+  selector:
+    matchLabels: {app: demo}
+  template:
+    metadata:
+      labels: {app: demo}
+    spec:
+      containers:
+        - name: app
+          image: example.invalid/demo:1
+          ports:
+            - {name: web, containerPort: 8080}
+          resources:
+            requests: {cpu: 1500m, memory: 2Gi}
+            limits: {cpu: '1', memory: 512Mi}
+          readinessProbe:
+            httpGet: {path: /ready, port: http}

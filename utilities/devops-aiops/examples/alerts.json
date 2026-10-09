@@ -1,0 +1,5 @@
+[
+  {"labels":{"alertname":"HighLatency","namespace":"demo","pod":"a"}},
+  {"labels":{"alertname":"HighLatency","namespace":"demo","pod":"b"}},
+  {"labels":{"alertname":"DiskFull","namespace":"demo","node":"c"}}
+]

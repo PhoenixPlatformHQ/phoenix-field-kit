@@ -1,0 +1,6 @@
+jobs:
+  - name: ci/build
+  - name: ci/test
+    needs: [ci/build]
+  - name: ci/package
+    needs: [ci/test]

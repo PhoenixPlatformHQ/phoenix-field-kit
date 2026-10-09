@@ -1,0 +1,4 @@
+job=producer-b
+build=7
+commit=def789
+payload=v2

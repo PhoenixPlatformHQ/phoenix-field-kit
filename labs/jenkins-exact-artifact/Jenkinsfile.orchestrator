@@ -1,0 +1,34 @@
+def aRef = [:]
+def bRef = [:]
+pipeline {
+  agent any
+  stages {
+    stage('Build exact inputs') {
+      steps {
+        script {
+          parallel(
+            A: {
+              def run = build job: 'producer-a', wait: true, propagate: true
+              aRef = [job: run.fullProjectName, number: "${run.number}"]
+            },
+            B: {
+              def run = build job: 'producer-b', wait: true, propagate: true
+              bRef = [job: run.fullProjectName, number: "${run.number}"]
+            }
+          )
+        }
+      }
+    }
+    stage('Package exact inputs') {
+      steps {
+        build job: 'package-artifacts', wait: true, propagate: true,
+          parameters: [
+            string(name: 'A_JOB', value: aRef.job),
+            string(name: 'A_BUILD', value: aRef.number),
+            string(name: 'B_JOB', value: bRef.job),
+            string(name: 'B_BUILD', value: bRef.number)
+          ]
+      }
+    }
+  }
+}

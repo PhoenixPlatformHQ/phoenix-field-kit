@@ -1,0 +1,16 @@
+pipeline {
+  agent any
+  stages {
+    stage('Build') {
+      steps {
+        sh '''
+          set -eu
+          mkdir -p artifact
+          printf 'job=%s\nbuild=%s\ncommit=%s\n' "$JOB_NAME" "$BUILD_NUMBER" "${GIT_COMMIT:-unknown}" > artifact/component.txt
+          sha256sum artifact/component.txt > artifact/SHA256SUMS
+        '''
+      }
+    }
+  }
+  post { success { archiveArtifacts artifacts: 'artifact/**', fingerprint: true } }
+}
